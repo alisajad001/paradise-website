@@ -1,0 +1,110 @@
+/* ______Universal Design______ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ______Typography______ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+h1,
+h2,
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 3.6rem;
+}
+
+h2{
+    font-size: 2.25rem;
+}
+
+h3{
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+p{
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+    color: #111;
+}
+
+li{
+    list-style: none;
+}
+
+/* ______Containers______ */
+.container{
+    max-width: 1440px;
+    padding: 0 120px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+}
+
+.gap-1{
+    gap: 10px;
+}
+
+.gap-2{
+    gap: 20px;
+}
+
+.gap-3{
+    gap: 30px;
+}
+
+
+.btn-primary{
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: all 0.3s;
+    font-size: 15px;
+}
+
+.btn-primary:hover{
+    background-color: #111;
+    color: #fff;
+}
