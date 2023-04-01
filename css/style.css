@@ -378,4 +378,9 @@ body{
         display: block;
         font-size: 1.5rem;
     }
+
+    .album img{
+        width: 90%;
+        height: 400px;
+    }
 }
