@@ -75,6 +75,10 @@ body{
     }
 }
 
+#header .navbar i{
+    display: none;
+}
+
 #header .navbar ul li{
     margin: 0 1.5rem;
 }
@@ -135,17 +139,6 @@ body{
 #services .container h2{
     margin: 3rem 0;
     position: relative;
-}
-
-#services .container h2::before{
-    content: '';
-    width: 5px;
-    height: 50px;
-    display: block;
-    position: absolute;
-    background-color: #f01078;
-    left: -20px;
-    border-radius: 5px;
 }
 
 .services-container{
@@ -294,4 +287,95 @@ body{
     scroll-snap-align: center;
 }
 
-/* ______Main - end______ */
+#footer{
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    margin-top: 6rem;
+}
+
+#footer p{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1440px) {
+    #header .container {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    #main #hero h1{
+        font-size: 2rem;
+    }
+
+    #main #hero .container{
+        padding: 0 1rem;
+    }
+
+    #services .container{
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .services-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-card{
+        width: 80%;
+    }
+
+    #welcome-banner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18rem;
+    }
+
+    #welcome-banner img{
+        width: 100%;
+    }
+
+    .welcome-banner-text{
+        width: 100%;
+        padding: 2rem 3rem;
+    }
+
+    #facilities .container h2{
+        font-size: 1.9rem;
+    }
+
+    #facilities .container{
+        padding: 0 2rem;
+    }
+
+    .facilities-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .facility{
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #main #hero h1{
+        font-size: 1.3rem;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    #header .navbar i{
+        display: block;
+        font-size: 1.5rem;
+    }
+}
