@@ -3,15 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* ______Typography______ */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 h1,
 h2,
 h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1{
@@ -29,7 +28,7 @@ h3{
 
 p{
     font-size: 1.1rem;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 a{
@@ -102,9 +101,24 @@ img{
     border-radius: 50px;
     transition: all 0.3s;
     font-size: 15px;
+    text-align: center;
 }
 
 .btn-primary:hover{
     background-color: #111;
     color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333333; 
 }

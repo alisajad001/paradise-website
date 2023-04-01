@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 html{
     font-size: 16px;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 #header{
@@ -111,7 +114,7 @@ body{
 
 /* ______Main - start______ */
 #main #hero{
-    background-image: linear-gradient(#fd7139c0, #ff53a3d8), url(../imgs/hero-1.jpg);
+    background-image: linear-gradient(#fd7139c0, #ff53a3d8), url(../imgs/hero-2.jpg);
     height: 700px;
     background-position: center;
     background-attachment: fixed;
@@ -128,6 +131,7 @@ body{
     font-weight: 600;
 }
 
+/* Services - start */
 #services .container h2{
     margin: 3rem 0;
     position: relative;
@@ -163,13 +167,12 @@ body{
 
 .service-info {
     position: absolute;
-    left: 0;
     width: 100%;
     height: 400px;
     padding: 20px;
-    background-image: linear-gradient(#fd7139c0, #ff53a3d8);
+    background-image: linear-gradient(#fd703981, #ff53a3a8);
     color: #fff;
-    transition: all 0.3s ease;
+    transition: 0.4s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,6 +190,108 @@ body{
 .service-card:hover .service-info {
     top: 0;
     opacity: 1;
+}
+/* Services - end */
+
+#welcome-banner{
+    width: 100%;
+    height: 600px;
+    margin-top: 10rem;
+    color: #fff;
+}
+
+#welcome-banner img{
+    width: 50%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.welcome-banner-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5rem;
+    background-image: linear-gradient(45deg, rgba(240, 57, 33, 0.87), #f01078);
+}
+
+.welcome-banner-text h2{
+    font-size: 3rem;
+}
+
+.welcome-banner-text p{
+    margin: 1.3rem 0 3rem 0;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.welcome-banner-text a{
+    width: 200px;
+}
+
+#facilities{
+    margin-top: 15rem;
+    text-align: center;
+}
+
+#facilities h2{
+    margin-bottom: 1.6rem;
+}
+
+#facilities p{
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.facilities-container{
+    text-align: left;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.facilities-container i{
+    font-size: 2.6rem;
+    margin: 2rem 0;
+}
+
+.facilities-container h3{
+    margin: 0 0 1.7rem 0;
+}
+
+.facility{
+    width: 400px;
+    transition: 0.4s;
+}
+
+.facility:hover{
+    color: #f01078;
+}
+
+#hotel-album{
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.album{
+    margin-top: 4rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 0 2rem;
+    gap: 2rem;
+    scroll-snap-type: x mandatory;
+}
+
+.album::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
+
+.album img{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    scroll-snap-align: center;
 }
 
 /* ______Main - end______ */
